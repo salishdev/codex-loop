@@ -31,6 +31,17 @@ Press Ctrl-C to stop. During an active iteration, the wrapper terminates the
 Codex process and its child processes before exiting. During the interval, it
 cancels the sleep immediately.
 
+## Releases
+
+Pushing a version tag builds an Apple Silicon macOS binary and publishes it to
+GitHub Releases with a SHA-256 checksum. The tag must match the version in
+`Cargo.toml`.
+
+```console
+git tag v0.1.0
+git push origin v0.1.0
+```
+
 ## Development
 
 ```console
